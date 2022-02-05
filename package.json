@@ -1,0 +1,13 @@
+{
+  "name": "olx_e2e_playwright",
+  "version": "1.0.0",
+  "description": "This project is an example. Also to test the new features of Playwright. Here are the solutions I use in commercial testing",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Anatolii Olesh",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.18.1"
+  }
+}
