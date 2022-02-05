@@ -1,8 +1,9 @@
 export const loginPageLocators = {
 
-    loginHeader: '#kc-page-title',
-    username: '#username',
-    password: '#password',
-    loginButton: '#kc-login',
-    registerButton: '#kc-registration > span > a',
+    loginHeader: '#innerLayout > section > div.login-box > div',
+    goToProfile: '#topLoginLink',
+    username: '#userEmail',
+    password: '#userPass',
+    loginButton: '#se_userLogin',
+    registerButton: '#register_tab',
 };

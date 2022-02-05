@@ -1,5 +1,5 @@
 export const user = {
-    email: 'qaubraine@gmail.com',
+    email: 'qauaqa@gmail.com',
     password: 'Qatest1!',
-    emailForLoginTest: 'qaubraine+100@gmail.com'
+    emailForLoginTest: 'qauaqa+1@gmail.com'
 };

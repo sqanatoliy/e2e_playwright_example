@@ -12,7 +12,13 @@ export class LoginPage {
         await this.page.goto('');
     }
 
-    
+    async goToProfile() {
+        await this.page.waitForSelector(loginPageLocators.goToProfile);
+        await this.page.click(loginPageLocators.goToProfile);
+        return this;
+    }
+
+
     async login(email: string, password: string) {
         await this.page.waitForSelector(loginPageLocators.username);
         await this.page.type(loginPageLocators.username, email);

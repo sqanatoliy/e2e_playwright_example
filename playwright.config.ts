@@ -16,7 +16,7 @@ const config: PlaywrightTestConfig = {
     //storageState: 'storageState.json',
     trace: 'on',
     //Base URL
-    baseURL: 'https://test.nodered.ubraine.com/',
+    baseURL: 'https://www.olx.ua/uk/',
     
 
     // Browser options
