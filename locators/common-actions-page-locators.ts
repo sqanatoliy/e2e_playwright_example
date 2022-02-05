@@ -1,10 +1,10 @@
 export const commonActionsPageLocators = {
     
-    appUpdatetModalWindow: 'text="Application updated"',
+    example_eklement1: 'text="Some text"',
 
-    uploadFile : {
-        chooseFile: 'input[type=file]',
-        okBtn: 'div.wrapper_button > button',
+    example : {
+        example_element2: 'selector',
+        
     },
     
 

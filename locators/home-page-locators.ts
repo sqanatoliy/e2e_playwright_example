@@ -1,4 +1,4 @@
-export const workspacesPageLocators = {
+export const homePageLocators = {
     
     userName: 'div.user_name',
     

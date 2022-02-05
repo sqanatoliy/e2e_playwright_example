@@ -1,6 +1,6 @@
 export const loginPageLocators = {
 
-    loginHeader: '#innerLayout > section > div.login-box > div',
+    loginForm: '#innerLayout > section > div.login-box > div',
     goToProfile: '#topLoginLink',
     username: '#userEmail',
     password: '#userPass',

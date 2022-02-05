@@ -1,11 +1,8 @@
 export const registerUserPageLocators = {
     
-    registerPageTitle: '#kc-page-title',
-    firstName: '#firstName',
-    lastName: '#lastName',
-    email: '#email',
-    username: '#username',
-    password: '#password',
-    confirmPassword: '#password-confirm',
-    registerButton: '#kc-form-buttons > input',
+    loginForm: '#innerLayout > section > div.login-box > div',
+    emailField: '#userEmailPhoneRegister',
+    passwordField: 'userPassRegister',
+    checkbox: 'div > div > label.icon.f_checkbox.inlblk.vtop',
+    registerButton: '#button_register',
 };
