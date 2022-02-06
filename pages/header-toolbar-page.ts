@@ -9,10 +9,20 @@ export class HeaderToolbarPage {
         this.page = page;
     }
 
-    async goToProfile() {
+
+    async open() {
+        await this.page.goto('');
+    }
+
+
+    async goToLoginForm() {
         await this.page.waitForSelector(headerToolbarPageLocators.login_btn);
         await this.page.click(headerToolbarPageLocators.login_btn);
-        return this;
+    }
+
+    async goToRegisterForm() {
+        await this.page.waitForSelector(headerToolbarPageLocators.register_btn);
+        await this.page.click(headerToolbarPageLocators.register_btn);
     }
 
 
