@@ -1,5 +1,4 @@
-import { test, expect, APIRequestContext} from '@playwright/test';
-import { homePageLocators } from '../locators/home-page-locators';
+import { test, expect} from '@playwright/test';
 import { HomePage } from '../pages/home-page'
 
 
