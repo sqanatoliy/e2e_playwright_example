@@ -1,6 +1,6 @@
-import { chromium, expect, FullConfig  } from '@playwright/test';
+import { chromium, FullConfig  } from '@playwright/test';
 import { user } from './framework/testdata';
-import {headerPageLocators} from './locators/header-page-locators'
+import {headerToolbarPageLocators} from './locators/header-toolbar-page-locators'
 import {loginPageLocators} from './locators/login-page-locators'
 
 
@@ -9,13 +9,19 @@ async function globalSetup(config: FullConfig) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto(baseURL);
-  await page.click(loginPageLocators.goToProfile);
+  await page.waitForSelector(headerToolbarPageLocators.login_btn);
+  await page.click(headerToolbarPageLocators.login_btn);
+  await page.waitForSelector(loginPageLocators.selectEmail);
+  await page.click(loginPageLocators.selectEmail);
+  await page.waitForSelector(loginPageLocators.username);
   await page.fill(loginPageLocators.username, user.email);
+  await page.click(loginPageLocators.nextbtn);
+  await page.waitForSelector(loginPageLocators.password);
   await page.fill(loginPageLocators.password, user.password);
   await page.click(loginPageLocators.loginButton);
+  await page.waitForSelector(headerToolbarPageLocators.userProfile.menu);
   await page.context().storageState({ path: 'state.json' });
-  await page.waitForURL('https://www.olx.ua/uk/myaccount/#login');
-  expect(page.url()).toBe('https://www.olx.ua/uk/myaccount/#login');
+  //await page.screenshot({ path: 'screenshot1.png' });
   await browser.close();
   
 }

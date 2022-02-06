@@ -10,13 +10,13 @@ const config: PlaywrightTestConfig = {
   retries: 1,
 
   globalSetup:require.resolve('./global-setup.ts'),
-  globalTeardown:require.resolve('./global-teardown'),
+  //globalTeardown:require.resolve('./global-teardown'),
 
   use: {
     //storageState: 'storageState.json',
     trace: 'on',
     //Base URL
-    baseURL: 'https://www.olx.ua/uk/',
+    baseURL: 'https://prom.ua/ua/',
     
 
     // Browser options
