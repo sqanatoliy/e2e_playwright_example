@@ -6,6 +6,7 @@ export const headerToolbarPageLocators = {
 
     userProfile: {
         menu: 'button[data-qaid=menu_btn]',
+        logout: 'div[data-qaid=logout]',
     },
 
 

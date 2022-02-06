@@ -26,4 +26,12 @@ export class HeaderToolbarPage {
     }
 
 
+    async logOut() {
+        await this.page.hover(headerToolbarPageLocators.userProfile.menu);
+        await this.page.waitForSelector(headerToolbarPageLocators.userProfile.logout);
+        await this.page.click(headerToolbarPageLocators.userProfile.logout);
+        return this;
+    }
+
+
 }

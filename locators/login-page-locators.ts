@@ -6,5 +6,6 @@ export const loginPageLocators = {
     nextbtn: '#emailConfirmButton',
     password: '#enterPassword',
     loginButton: '#enterPasswordConfirmButton',
+    
     registerButton: 'span[data-qaid=registration_link]',
 };
